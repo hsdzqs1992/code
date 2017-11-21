@@ -1,6 +1,7 @@
 package com.zhuye.hougong.adapter;
 
 import android.content.Context;
+import android.widget.TextView;
 
 import com.zhuye.hougong.R;
 
@@ -24,8 +25,10 @@ public class GuanZhuAdapter extends BaseRecycleAdapter {
 
     @Override
     protected void conver(BaseHolder holder, int position) {
-        //holder.getView(R.id.guanzhu_item_tv)
+        ((TextView)holder.getView(R.id.guanzhu_item_tv)).setText(data.get(position)+"");
     }
+
+
 
 
 }

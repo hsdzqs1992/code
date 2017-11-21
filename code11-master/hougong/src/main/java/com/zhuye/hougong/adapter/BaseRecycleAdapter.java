@@ -15,6 +15,8 @@ public abstract class BaseRecycleAdapter<T> extends RecyclerView.Adapter<BaseHol
 
     Context conn;
     List<T> data;
+
+    public BaseHolder.OnItemClickListener mOnItemClickListener;
     public BaseRecycleAdapter(Context conn,List<T> data) {
         this.conn= conn;
         this.data= data;
@@ -34,6 +36,8 @@ public abstract class BaseRecycleAdapter<T> extends RecyclerView.Adapter<BaseHol
     @Override
     public void onBindViewHolder(BaseHolder holder, int position) {
         conver(holder,position);
+        if(mOnItemClickListener!=null)
+            holder.setOnItemClickListener(mOnItemClickListener);
     }
 
     protected abstract void conver(BaseHolder holder, int position);
@@ -43,4 +47,15 @@ public abstract class BaseRecycleAdapter<T> extends RecyclerView.Adapter<BaseHol
     public int getItemCount() {
         return data.size();
     }
+
+
+    public void setOnItemClickListener(BaseHolder.OnItemClickListener onItemClickListener){
+        mOnItemClickListener = onItemClickListener;
+    }
+
+//    public <V extends View> V getView(int ResId){
+//        return (V)rootView.findViewById(ResId);
+//    }
+
+
 }
