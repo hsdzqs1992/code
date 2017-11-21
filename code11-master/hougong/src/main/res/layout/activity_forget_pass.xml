@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context="com.zhuye.hougong.view.ForgetPassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/forget_username_tv"
+            android:text="@string/me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/forget_username"
+            android:hint="请输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingRight="70dp"
+            android:id="@+id/forget_yanzhengma"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:hint="请输入验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/forget_sendcode"
+            android:background="@drawable/btn_bg"
+            android:textSize="24sp"
+            android:text="发送验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/forget_next"
+        android:background="@drawable/btn_bg"
+        android:textSize="24sp"
+        android:text="下一步"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

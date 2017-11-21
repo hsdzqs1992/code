@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f475ba</color>
+    <color name="colorPrimaryDark">#f475ba</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="paihang_bg_start">#77b7f5</color>
+    <color name="paihang_bg_end">#8083ec</color>
+    <color name="m_toolbar">#4a4541</color>
+    <color name="translate">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="course_name">#000000</color>
+
+
+</resources>

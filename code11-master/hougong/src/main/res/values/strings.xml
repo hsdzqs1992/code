@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">HouGong</string>
+    <string name="weibo">&#xe67b;</string>
+    <string name="weixin">&#xe643;</string>
+    <string name="qq">&#xe644;</string>
+    <string name="yibai">&#xe601;</string>
+    <string name="loudou">&#xe66f;</string>
+    <string name="paihang">&#xe624;</string>
+    <string name="dianzan">&#xe600;</string>
+    <string name="man">&#xe606;</string>
+    <string name="setting">&#xe64e;</string>
+    <string name="qianbao">&#xe621;</string>
+    <string name="eye">&#xe608;</string>
+    <string name="message">&#xe69a;</string>
+    <string name="like">&#xe611;</string>
+    <string name="me">&#xe661;</string>
+    <string name="liwu1">&#xe637;</string>
+    <string name="find">&#xe7cd;</string>
+    <string name="yuanbao">&#xe754;</string>
+    <string name="video">&#xe60b;</string>
+    <string name="huangguan">&#xe622;</string>
+    <string name="liwu">&#xe60a;</string>
+    <string name="nvxing">&#xe63a;</string>
+    <string name="photo">&#xe66c;</string>
+    <string name="feiji">&#xe676;</string>
+
+
+    <string name="tuijian">推荐</string>
+    <string name="huoyue">活跃</string>
+    <string name="xinren">新人</string>
+    <string name="mianfei">免费</string>
+    <string name="touixang">头像</string>
+    <string name="yonghuiming">用户名</string>
+    <string name="mingzi">名字</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="xingzuo">星座</string>
+    <string name="diqu">地区</string>
+    <string name="jibie">级别</string>
+    <string name="bangding">账号绑定</string>
+    <string name="heimingdan">黑名单</string>
+    <string name="yinshen">隐身</string>
+    <string name="feedback">反馈意见</string>
+    <string name="qingchujilu">清除聊天记录</string>
+    <string name="qingchuhuancun">清除缓存</string>
+    <string name="guanyu">关于软件</string>
+    <string name="logout">退出账号</string>
+    <string name="guanzhu">我的关注</string>
+
+</resources>

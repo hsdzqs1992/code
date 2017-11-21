@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.hougong.view.LoginActivity">
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/yibai"
+        android:gravity="center"
+        android:textSize="300sp"
+        android:text="@string/yibai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_username"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:hint="请输入手机号或用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_password"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:hint="请输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/login_forgetpass"
+            android:text="忘记密码?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_login"
+        android:background="@drawable/btn_bg"
+        android:textSize="24sp"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="第三方登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/login_weixin"
+            android:text="@string/weixin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/login_qq"
+            android:text="@string/qq"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/login_weibo"
+            android:text="@string/weibo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/login_regeist"
+            android:background="@drawable/btn_bg"
+            android:textSize="24sp"
+            android:text="还没有账号，马上注册"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

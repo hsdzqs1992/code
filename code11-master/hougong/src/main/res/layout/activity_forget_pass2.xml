@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_pass2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.hougong.view.ForgetPass2Activity">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/reforget_passs"
+        android:hint="请设置登录密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/reforget_repasss"
+        android:hint="请确认登录密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_login"
+        android:background="@drawable/btn_bg"
+        android:textSize="24sp"
+        android:text="完成"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_regeist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.zhuye.hougong.view.RegeistActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/regeist_username_tv"
+            android:text="@string/me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/regeist_username"
+            android:hint="请输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingRight="70dp"
+            android:id="@+id/regeist_yanzhengma"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:hint="请输入验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/login_sendcode"
+            android:background="@drawable/btn_bg"
+            android:textSize="24sp"
+            android:text="发送验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <EditText
+        android:inputType="textPassword"
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/regeist_pass"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:hint="请设置登录密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/regeist_repass"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:hint="请确认登录密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_login"
+        android:background="@drawable/btn_bg"
+        android:textSize="24sp"
+        android:text="注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
