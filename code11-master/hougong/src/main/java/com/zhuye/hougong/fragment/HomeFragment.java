@@ -9,6 +9,7 @@ import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
 import com.zhuye.hougong.R;
+import com.zhuye.hougong.adapter.HomePagerAdapter;
 import com.zhuye.hougong.base.BaseFragment;
 import com.zhuye.hougong.bean.HomeBanner;
 import com.zhuye.hougong.weidgt.PagerSlidingTabStrip;
@@ -44,8 +45,9 @@ public class HomeFragment extends BaseFragment {
         //myToolbar = rootView.findViewById(R.id.home_toolbar);
 
         //initToolBar();
-//        mviewpager.setAdapter(new HomePagerAdapter(getActivity().getSupportFragmentManager()));
+       mviewpager.setAdapter(new HomePagerAdapter(getActivity().getSupportFragmentManager()));
 //        myToolbar.tabs.setViewPager(mviewpager);
+        mTabStrip.setViewPager(mviewpager);
 
 
 

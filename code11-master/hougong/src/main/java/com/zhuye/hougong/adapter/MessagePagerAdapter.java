@@ -6,10 +6,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.zhuye.hougong.base.BaseFragment;
 import com.zhuye.hougong.bean.HomeBanner;
-import com.zhuye.hougong.fragment.home.HuoYueFragment;
-import com.zhuye.hougong.fragment.home.MianFeiFragment;
-import com.zhuye.hougong.fragment.home.TuiJianFragment;
-import com.zhuye.hougong.fragment.home.XinRenFragment;
+import com.zhuye.hougong.fragment.message.TongHuaFragment;
+import com.zhuye.hougong.fragment.message.XiaoxiFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +16,7 @@ import java.util.List;
  * Created by zzzy on 2017/11/21.
  */
 
-public class HomePagerAdapter extends FragmentStatePagerAdapter {
+public class MessagePagerAdapter extends FragmentStatePagerAdapter {
 
 
     private List<String> titles = new ArrayList<>();
@@ -26,24 +24,22 @@ public class HomePagerAdapter extends FragmentStatePagerAdapter {
 
     HomeBanner homeBanner;
 
-    public HomePagerAdapter(FragmentManager fm) {
+    public MessagePagerAdapter(FragmentManager fm) {
         super(fm);
-        titles.add("推荐");
-        titles.add("活跃");
-        titles.add("新人");
-        titles.add("免费");
+        titles.add("消息");
+        titles.add("通话");
 
-        fargments.add(new TuiJianFragment());
-        fargments.add(new HuoYueFragment());
-        fargments.add(new XinRenFragment());
-        fargments.add(new MianFeiFragment());
+
+
+        fargments.add(new XiaoxiFragment());
+        fargments.add(new TongHuaFragment());
+
+
 
 
     }
 
-    public void setData(HomeBanner homeBanner){
-        this.homeBanner = homeBanner;
-    }
+
 
 
 
